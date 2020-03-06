@@ -1,0 +1,21 @@
+cd /
+cd usr
+cd src
+cd asterisk asterisk-13.30.0 
+cd contrib
+cd scripts
+ast_tls_cert
+
+Crear certificados de asterisk tls
+/usr/src/asterisk-15.7.1/contrib/scripts/ast_tls_cert
+
+Los certifiocados quedan en
+/etc/asterisk/keys
+
+Abrir puertos 8088 y 8089
+
+mkdir /etc/asterisk/keys
+
+./ast_tls_cert -C pbx.example.com -O "My Super Company" -d /etc/asterisk/keys
+
+ls -w 1 /etc/asterisk/keys
